@@ -7,10 +7,10 @@ class Orque : public Guerrier {
     static const int type;
     Orque();
     void restituer() override;
-    pair bouger(pair& position) override;
-    pair PositionAtt(const pair& position) override;
+    pair bouger(pair position) override;
+    pair PositionAtt(pair position) override;
     void AfficherGuerrier() override;
     int getType() override;
     ~Orque();
-}
+};
 #endif

@@ -1,9 +1,11 @@
-#ifndef Guerrier_HPP
-#define Guerrier_HPP
+#ifndef GUERRIER_HPP
+#define GUERRIER_HPP
 
+#include <iostream>
 #include <utility>
+#include "mt19937ar.h"
 
-using pair == std::pair<int,int>
+using pair = std::pair<int,int>;
 
 class Guerrier 
 {
@@ -13,16 +15,18 @@ class Guerrier
         int force;
         int vitesse;
         int id;
+        float precision;
     public :
         // Constructor
         Guerrier();
-
+        
         // Getters 
         int getHp();
         int getIntelligence();
         int getForce();
         int getVitesse();
         int getId();
+        float getPrecision();
 
         // Setters 
         void setHp(int);
@@ -30,19 +34,20 @@ class Guerrier
         void setForce(int);
         void setVitesse(int);
         void setId(int);
+        void setPrecision(float);
 
         // Fonctions
         void incrementId(int value);
-        bool estMort() const;
-        bool estAmi(const Guerrier& other) const;
-        int decider() const; // { 0 : Attaquer , 1 : Bouger}
-        int attaquer() const;
+        bool estMort();
+        bool estAmi(Guerrier& other);
+        int decider(); // { 0 : Attaquer , 1 : Bouger}
+        int attaquer();
         void reduireHp(int amount);
-        virtual void restituer() const = 0;
-        virtual pair bouger(pair& position) const = 0;
-        virtual pair PositionAtt(const pair& position) const = 0;
-        virtual void AfficherGuerrier() const = 0;
-        virtual int getType() const = 0;
+        virtual void restituer() = 0;
+        virtual pair bouger(pair position) = 0;
+        virtual pair PositionAtt(pair position)= 0;
+        virtual void AfficherGuerrier() = 0;
+        virtual int getType() = 0;
 
         // Destructor
         virtual ~Guerrier();
