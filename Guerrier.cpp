@@ -1,7 +1,7 @@
 #include "Guerrier.hpp"
 
 // Constructor
-Guerrier::Guerrier() : hp(0), intelligence(0), precision(0.0),force(0), vitesse(0), id(0) {}
+Guerrier::Guerrier() : hp(0), intelligence(0), force(0),vitesse(0),id(0), precision(0.0){}
 
 // Getters
 int Guerrier::getHp() { return hp; }

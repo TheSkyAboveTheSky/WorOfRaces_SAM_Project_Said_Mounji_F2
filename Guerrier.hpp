@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <utility>
+#include <vector>
+#include <set>
 #include "mt19937ar.h"
 
 using pair = std::pair<int,int>;
