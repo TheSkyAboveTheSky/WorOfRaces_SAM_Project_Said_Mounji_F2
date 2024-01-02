@@ -1,6 +1,6 @@
 #include "Humain.hpp"
 
-const int Humain::type = 1;
+const int Humain::type = 0;
 
 Humain::Humain() {
     this->hp = 100;
