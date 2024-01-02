@@ -1,6 +1,6 @@
 #include "Elfe.hpp"
 
-const int Elfe::type = 2;
+const int Elfe::type = 1;
 
 Elfe::Elfe()
 {

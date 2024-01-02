@@ -4,6 +4,7 @@
 #include "Guerrier.hpp"
 
 class Elfe : public Guerrier {
+public:
     static const int type;
     Elfe();
     void restituer() override;
