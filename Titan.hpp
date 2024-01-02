@@ -4,6 +4,7 @@
 #include "Guerrier.hpp"
 
 class Titan : public Guerrier {
+    public:
     static const int type;
     Titan();
     void restituer() override;

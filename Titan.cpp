@@ -1,6 +1,6 @@
 #include "Titan.hpp"
 
-const int Titan::type = 4;
+const int Titan::type = 3;
 
 Titan::Titan()
 {
