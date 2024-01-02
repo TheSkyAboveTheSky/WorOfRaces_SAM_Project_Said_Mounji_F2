@@ -1,4 +1,4 @@
-SRC=main.cpp
+SRC=main.cpp Guerrier.cpp Humain.cpp Elfe.cpp Orque.cpp Titan.cpp mt19937ar.c
 #SRC=$(wildcard *.cpp)  
 EXE=nom_executable
 
