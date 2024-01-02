@@ -1,6 +1,6 @@
 #include "Orque.hpp"
 
-const int Orque::type = 3;
+const int Orque::type = 2;
 
 Orque::Orque()
 {
