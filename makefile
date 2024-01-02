@@ -1,8 +1,9 @@
 SRC=main.cpp
+#SRC=$(wildcard *.cpp)  
 EXE=nom_executable
 
 CXXFLAGS+=-Wall -Wextra -MMD -g -O2
-LDFLAGS= 
+LDFLAGS= #-lSDL
 
 OBJ=$(addprefix build/,$(SRC:.cpp=.o))
 DEP=$(addprefix build/,$(SRC:.cpp=.d))
