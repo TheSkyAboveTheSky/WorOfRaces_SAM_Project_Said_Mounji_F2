@@ -1,6 +1,9 @@
+/**
+ * @file Statistique.cpp
+ * @brief Implementation of The Statistique Class.
+ *
+ */
 #include "Statistique.hpp"
-
-
 
 Statistique::Statistique(int nbSimulation, int nbTour, SDL_Renderer* r) : nombreSimulation(nbSimulation), nombreTour(nbTour)
 {

@@ -1,3 +1,8 @@
+/**
+ * @file Elfe.cpp
+ * @brief Implementation of The Elfe Class.
+ *
+ */
 #include "Elfe.hpp"
 
 const int Elfe::type = 1;

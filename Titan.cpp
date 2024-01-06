@@ -1,3 +1,8 @@
+/**
+ * @file Titan.cpp
+ * @brief Implementation of The Titan Class.
+ *
+ */
 #include "Titan.hpp"
 
 const int Titan::type = 3;

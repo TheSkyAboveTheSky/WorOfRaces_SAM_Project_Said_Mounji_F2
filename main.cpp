@@ -1,3 +1,8 @@
+/**
+ * @file main.cpp
+ * @brief Our Main File.
+ *
+ */
 #include "Statistique.hpp"
 
 int main(int , char** )

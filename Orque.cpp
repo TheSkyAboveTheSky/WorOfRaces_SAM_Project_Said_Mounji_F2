@@ -1,3 +1,8 @@
+/**
+ * @file Orque.cpp
+ * @brief Implementation of The Orque Class.
+ *
+ */
 #include "Orque.hpp"
 
 const int Orque::type = 2;

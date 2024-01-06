@@ -1,3 +1,8 @@
+/**
+ * @file Terrain.cpp
+ * @brief Implementation of The Terrain Class.
+ *
+ */
 #include "Terrain.hpp"
 
 Terrain::Terrain()

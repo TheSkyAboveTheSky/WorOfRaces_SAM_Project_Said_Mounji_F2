@@ -1,3 +1,8 @@
+/**
+ * @file Terrain.hpp
+ * @brief Declaration of The Terrain Class.
+ *
+ */
 #ifndef TERRAIN__HPP
 #define TERRAIN__HPP
 

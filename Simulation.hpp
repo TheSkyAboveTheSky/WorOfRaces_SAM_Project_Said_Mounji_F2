@@ -1,3 +1,8 @@
+/**
+ * @file Simulation.hpp
+ * @brief Declaration of The Simulation Class.
+ *
+ */
 #ifndef SIMULATION__H
 #define SIMULATION__H
 

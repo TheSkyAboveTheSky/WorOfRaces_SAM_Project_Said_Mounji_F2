@@ -1,3 +1,8 @@
+/**
+ * @file mt19937ar.h
+ * @brief Declaration of The Mersenne Twister.
+ *
+ */
 /*GARDIENS*/
 #ifndef MT_H
 #define MT_H

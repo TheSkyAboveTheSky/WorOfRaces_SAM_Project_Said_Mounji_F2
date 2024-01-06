@@ -1,3 +1,8 @@
+/**
+ * @file Elfe.hpp
+ * @brief Declaration of The Elfe Class.
+ *
+ */
 #ifndef Elfe_HPP
 #define Elfe_HPP
 

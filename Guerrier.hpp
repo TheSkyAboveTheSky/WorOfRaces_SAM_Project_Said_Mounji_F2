@@ -1,3 +1,8 @@
+/**
+ * @file Guerrier.hpp
+ * @brief Declaration of The Guerrier Class.
+ *
+ */
 #ifndef GUERRIER_HPP
 #define GUERRIER_HPP
 

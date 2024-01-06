@@ -1,3 +1,8 @@
+/**
+ * @file Simulation.cpp
+ * @brief Implementation of The Simulation Class.
+ *
+ */
 #include "Simulation.hpp"
 
 Simulation::Simulation()

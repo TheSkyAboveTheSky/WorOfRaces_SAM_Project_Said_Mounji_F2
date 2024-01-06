@@ -1,3 +1,8 @@
+/**
+ * @file Humain.cpp
+ * @brief Implementation of The Humain Class.
+ *
+ */
 #include "Humain.hpp"
 
 const int Humain::type = 0;

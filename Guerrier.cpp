@@ -1,3 +1,8 @@
+/**
+ * @file Guerrier.cpp
+ * @brief Implementation of The Guerrier Class which is the Base Class.
+ *
+ */
 #include "Guerrier.hpp"
 
 // Constructor

@@ -1,3 +1,8 @@
+/**
+ * @file Titan.hpp
+ * @brief Declaration of The Titan Class.
+ *
+ */
 #ifndef Titan_HPP
 #define Titan_HPP
 

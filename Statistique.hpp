@@ -1,3 +1,8 @@
+/**
+ * @file Statistique.hpp
+ * @brief Declaration of The Statistique Class.
+ *
+ */
 #ifndef STATISTIQUE_HPP
 #define STATISTIQUE_HPP
 

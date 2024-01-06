@@ -42,25 +42,36 @@ $(function() {
   <div class="headertitle"><div class="title">Elfe.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef Elfe_HPP</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define Elfe_HPP</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Guerrier.hpp&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classElfe.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classElfe.html">Elfe</a> : <span class="keyword">public</span> <a class="code hl_class" href="classGuerrier.html">Guerrier</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> type;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classElfe.html">Elfe</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> restituer() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    pair bouger(pair position) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    pair PositionAtt(pair position) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> AfficherGuerrier() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">int</span> getType() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classElfe.html">~Elfe</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassElfe_html"><div class="ttname"><a href="classElfe.html">Elfe</a></div><div class="ttdef"><b>Definition:</b> Elfe.hpp:6</div></div>
-<div class="ttc" id="aclassGuerrier_html"><div class="ttname"><a href="classGuerrier.html">Guerrier</a></div><div class="ttdef"><b>Definition:</b> Guerrier.hpp:13</div></div>
+<a href="Elfe_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef Elfe_HPP</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define Elfe_HPP</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="Guerrier_8hpp.html">Guerrier.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classElfe.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classElfe.html">Elfe</a> : <span class="keyword">public</span> <a class="code hl_class" href="classGuerrier.html">Guerrier</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classElfe.html#ade591433f916ef822e8a24246427875d">   13</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classElfe.html#ade591433f916ef822e8a24246427875d">type</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="classElfe.html#a319052b8571c2682c73e17187fae1f22">Elfe</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classElfe.html#a37b74c6c430a7dda6997d6df0ce87e54">restituer</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_typedef" href="Guerrier_8hpp.html#aaad0a9a967c4320fcf84a6ac730035bc">pair</a> <a class="code hl_function" href="classElfe.html#ae447c635369d1737084e0b9a68021147">bouger</a>(<a class="code hl_typedef" href="Guerrier_8hpp.html#aaad0a9a967c4320fcf84a6ac730035bc">pair</a> position) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_typedef" href="Guerrier_8hpp.html#aaad0a9a967c4320fcf84a6ac730035bc">pair</a> <a class="code hl_function" href="classElfe.html#a752cd02c500824c556f59944c8e515f8">PositionAtt</a>(<a class="code hl_typedef" href="Guerrier_8hpp.html#aaad0a9a967c4320fcf84a6ac730035bc">pair</a> position) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classElfe.html#a477b83bccdaee2b1185166b98510ffa2">AfficherGuerrier</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classElfe.html#a5195196e8cb7aede570c0d442321d944">getType</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="classElfe.html#a87f333c2396754e8e5d5dd4625f33b4d">~Elfe</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aGuerrier_8hpp_html"><div class="ttname"><a href="Guerrier_8hpp.html">Guerrier.hpp</a></div><div class="ttdoc">Declaration of The Guerrier Class.</div></div>
+<div class="ttc" id="aGuerrier_8hpp_html_aaad0a9a967c4320fcf84a6ac730035bc"><div class="ttname"><a href="Guerrier_8hpp.html#aaad0a9a967c4320fcf84a6ac730035bc">pair</a></div><div class="ttdeci">std::pair&lt; int, int &gt; pair</div><div class="ttdef"><b>Definition:</b> Guerrier.hpp:15</div></div>
+<div class="ttc" id="aclassElfe_html"><div class="ttname"><a href="classElfe.html">Elfe</a></div><div class="ttdef"><b>Definition:</b> Elfe.hpp:11</div></div>
+<div class="ttc" id="aclassElfe_html_a319052b8571c2682c73e17187fae1f22"><div class="ttname"><a href="classElfe.html#a319052b8571c2682c73e17187fae1f22">Elfe::Elfe</a></div><div class="ttdeci">Elfe()</div><div class="ttdef"><b>Definition:</b> Elfe.cpp:10</div></div>
+<div class="ttc" id="aclassElfe_html_a37b74c6c430a7dda6997d6df0ce87e54"><div class="ttname"><a href="classElfe.html#a37b74c6c430a7dda6997d6df0ce87e54">Elfe::restituer</a></div><div class="ttdeci">void restituer() override</div><div class="ttdef"><b>Definition:</b> Elfe.cpp:30</div></div>
+<div class="ttc" id="aclassElfe_html_a477b83bccdaee2b1185166b98510ffa2"><div class="ttname"><a href="classElfe.html#a477b83bccdaee2b1185166b98510ffa2">Elfe::AfficherGuerrier</a></div><div class="ttdeci">void AfficherGuerrier() override</div><div class="ttdef"><b>Definition:</b> Elfe.cpp:19</div></div>
+<div class="ttc" id="aclassElfe_html_a5195196e8cb7aede570c0d442321d944"><div class="ttname"><a href="classElfe.html#a5195196e8cb7aede570c0d442321d944">Elfe::getType</a></div><div class="ttdeci">int getType() override</div><div class="ttdef"><b>Definition:</b> Elfe.cpp:25</div></div>
+<div class="ttc" id="aclassElfe_html_a752cd02c500824c556f59944c8e515f8"><div class="ttname"><a href="classElfe.html#a752cd02c500824c556f59944c8e515f8">Elfe::PositionAtt</a></div><div class="ttdeci">pair PositionAtt(pair position) override</div><div class="ttdef"><b>Definition:</b> Elfe.cpp:47</div></div>
+<div class="ttc" id="aclassElfe_html_a87f333c2396754e8e5d5dd4625f33b4d"><div class="ttname"><a href="classElfe.html#a87f333c2396754e8e5d5dd4625f33b4d">Elfe::~Elfe</a></div><div class="ttdeci">~Elfe()</div><div class="ttdef"><b>Definition:</b> Elfe.cpp:58</div></div>
+<div class="ttc" id="aclassElfe_html_ade591433f916ef822e8a24246427875d"><div class="ttname"><a href="classElfe.html#ade591433f916ef822e8a24246427875d">Elfe::type</a></div><div class="ttdeci">static const int type</div><div class="ttdef"><b>Definition:</b> Elfe.hpp:13</div></div>
+<div class="ttc" id="aclassElfe_html_ae447c635369d1737084e0b9a68021147"><div class="ttname"><a href="classElfe.html#ae447c635369d1737084e0b9a68021147">Elfe::bouger</a></div><div class="ttdeci">pair bouger(pair position) override</div><div class="ttdef"><b>Definition:</b> Elfe.cpp:36</div></div>
+<div class="ttc" id="aclassGuerrier_html"><div class="ttname"><a href="classGuerrier.html">Guerrier</a></div><div class="ttdef"><b>Definition:</b> Guerrier.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

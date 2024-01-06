@@ -1,3 +1,8 @@
+/**
+ * @file Orque.hpp
+ * @brief Declaration of The Orque Class.
+ *
+ */
 #ifndef Orque_HPP
 #define Orque_HPP
 

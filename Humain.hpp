@@ -1,3 +1,8 @@
+/**
+ * @file Humain.hpp
+ * @brief Declaration of The Humain Class.
+ *
+ */
 #ifndef Humain_HPP
 #define Humain_HPP
 
