@@ -26,9 +26,6 @@ $(PROGRAM): $(OBJ)
 valgrind: $(PROGRAM)
 	valgrind --leak-check=full ./$(PROGRAM)
 
-doc:
-	doxygen Doxyfile
-
 # Règle de suppression des fichiers
 clean:
 	rm -rf $(PROGRAM) *.o

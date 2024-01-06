@@ -45,18 +45,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Représente la classe <a class="el" href="classStatistique.html" title="Représente la classe Statistique, qui calcule des statistiques basées sur des simulations.">Statistique</a>, qui calcule des statistiques basées sur des simulations.  
+ <a href="classStatistique.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Statistique_8hpp_source.html">Statistique.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6bcadd87eaa3c04f505145915e4c19fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatistique.html#a6bcadd87eaa3c04f505145915e4c19fa">Statistique</a> (int, int, SDL_Renderer *)</td></tr>
-<tr class="separator:a6bcadd87eaa3c04f505145915e4c19fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e89ea45238ac7e2061353a83fbb59c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatistique.html#aa3e89ea45238ac7e2061353a83fbb59c">Statistique</a> (int simulations, int tours, SDL_Renderer *renderer)</td></tr>
+<tr class="memdesc:aa3e89ea45238ac7e2061353a83fbb59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="classStatistique.html" title="Représente la classe Statistique, qui calcule des statistiques basées sur des simulations.">Statistique</a>.  <a href="classStatistique.html#aa3e89ea45238ac7e2061353a83fbb59c">More...</a><br /></td></tr>
+<tr class="separator:aa3e89ea45238ac7e2061353a83fbb59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3408bd502002ef4b8dbb8fd917f504ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatistique.html#a3408bd502002ef4b8dbb8fd917f504ce">moyenneMort</a> ()</td></tr>
+<tr class="memdesc:a3408bd502002ef4b8dbb8fd917f504ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le nombre moyen de décès sur l'ensemble des simulations.  <a href="classStatistique.html#a3408bd502002ef4b8dbb8fd917f504ce">More...</a><br /></td></tr>
 <tr class="separator:a3408bd502002ef4b8dbb8fd917f504ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6bcadd87eaa3c04f505145915e4c19fa" name="a6bcadd87eaa3c04f505145915e4c19fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bcadd87eaa3c04f505145915e4c19fa">&#9670;&nbsp;</a></span>Statistique()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Représente la classe <a class="el" href="classStatistique.html" title="Représente la classe Statistique, qui calcule des statistiques basées sur des simulations.">Statistique</a>, qui calcule des statistiques basées sur des simulations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa3e89ea45238ac7e2061353a83fbb59c" name="aa3e89ea45238ac7e2061353a83fbb59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e89ea45238ac7e2061353a83fbb59c">&#9670;&nbsp;</a></span>Statistique()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -87,6 +94,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de la classe <a class="el" href="classStatistique.html" title="Représente la classe Statistique, qui calcule des statistiques basées sur des simulations.">Statistique</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">simulations</td><td>Nombre de simulations. </td></tr>
+    <tr><td class="paramname">tours</td><td>Nombre de tours pour chaque simulation. </td></tr>
+    <tr><td class="paramname">renderer</td><td>Pointeur vers le rendu SDL.</td></tr>
+    <tr><td class="paramname">nbSimulation</td><td>Nombre de simulations. </td></tr>
+    <tr><td class="paramname">nbTour</td><td>Nombre de tours pour chaque simulation. </td></tr>
+    <tr><td class="paramname">r</td><td>Pointeur vers le rendu SDL. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -104,6 +124,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Calcule le nombre moyen de décès sur l'ensemble des simulations. </p>
+<dl class="section return"><dt>Returns</dt><dd>Le nombre moyen de décès. </dd></dl>
 
 </div>
 </div>
