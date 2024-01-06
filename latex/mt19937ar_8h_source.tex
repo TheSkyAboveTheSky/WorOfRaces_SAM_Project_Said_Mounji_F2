@@ -1,0 +1,32 @@
+\hypertarget{mt19937ar_8h_source}{}\doxysection{mt19937ar.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*GARDIENS*/}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef MT\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define MT\_H}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keywordtype}{void} init\_genrand(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} s) ;    \textcolor{comment}{/* initializes mt[N] with a seed */}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keywordtype}{void} init\_by\_array(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} init\_key[], \textcolor{keywordtype}{int} key\_length) ; \textcolor{comment}{/* initialize by an array with array-\/length */}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keywordtype}{double} genrand\_real1(\textcolor{keywordtype}{void});           \textcolor{comment}{/* generates a random number on [0,1]-\/real-\/interval */}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keywordtype}{double} genrand\_real2(\textcolor{keywordtype}{void});           \textcolor{comment}{/* generates a random number on [0,1)-\/real-\/interval */}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keywordtype}{double} genrand\_real3(\textcolor{keywordtype}{void});           \textcolor{comment}{/* generates a random number on (0,1)-\/real-\/interval */}     }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} genrand\_int32(\textcolor{keywordtype}{void});    \textcolor{comment}{/*generates a random number on [0,0xffffffff]-\/int-\/interval*/}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keywordtype}{double} uniform(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b);         \textcolor{comment}{/*generates a random number on [a,b]-\/real-\/interval*/}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

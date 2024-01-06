@@ -1,0 +1,69 @@
+\hypertarget{Simulation_8hpp_source}{}\doxysection{Simulation.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SIMULATION\_\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SIMULATION\_\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <SDL2/SDL.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{8 \textcolor{keyword}{using }pair = std::pair<int, int>;}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}Guerrier.hpp"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Humain.hpp"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}Elfe.hpp"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Orque.hpp"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Titan.hpp"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}Terrain.hpp"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{const} \textcolor{keywordtype}{int} TAILLE\_A = 162;             }
+\DoxyCodeLine{17 \textcolor{keyword}{const} \textcolor{keywordtype}{int} TAILLE\_C = 3;   }
+\DoxyCodeLine{18 \textcolor{keyword}{const} \textcolor{keywordtype}{int} N\_HUMAIN = 80;}
+\DoxyCodeLine{19 \textcolor{keyword}{const} \textcolor{keywordtype}{int} N\_ELFE = 42;}
+\DoxyCodeLine{20 \textcolor{keyword}{const} \textcolor{keywordtype}{int} N\_ORQUE = 30;}
+\DoxyCodeLine{21 \textcolor{keyword}{const} \textcolor{keywordtype}{int} N\_TITAN = 10;}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define BLE     "{}\(\backslash\)x1b[44m"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define INIT    "{}\(\backslash\)x1b[0m"{}}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define RED     "{}\(\backslash\)x1b[31m"{}}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define RED2    "{}\(\backslash\)x1b[41;5;1m"{}}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{typedef} std::vector<Guerrier *> Armee;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{class }\mbox{\hyperlink{classSimulation}{Simulation}} \{}
+\DoxyCodeLine{31     Armee a[2];}
+\DoxyCodeLine{32     \mbox{\hyperlink{classGuerrier}{Guerrier}} * carteGuerre[TAILLE\_C * TAILLE\_T][TAILLE\_C * TAILLE\_T];}
+\DoxyCodeLine{33     \mbox{\hyperlink{classGuerrier}{Guerrier}} * carteEtat[TAILLE\_C * TAILLE\_T][TAILLE\_C * TAILLE\_T];}
+\DoxyCodeLine{34     public : }
+\DoxyCodeLine{35         \mbox{\hyperlink{classTerrain}{Terrain}}** carte;}
+\DoxyCodeLine{36         std::set<Guerrier *> morts0;}
+\DoxyCodeLine{37         std::set<Guerrier *> morts1;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39         \textcolor{comment}{// Constructeur}}
+\DoxyCodeLine{40         \mbox{\hyperlink{classSimulation}{Simulation}}();}
+\DoxyCodeLine{41         \textcolor{comment}{// Getters \& Setters pour les armées}}
+\DoxyCodeLine{42         Armee getA1();}
+\DoxyCodeLine{43         Armee getA2();}
+\DoxyCodeLine{44         \textcolor{keywordtype}{void} setA1(Armee );}
+\DoxyCodeLine{45         \textcolor{keywordtype}{void} setA2(Armee );}
+\DoxyCodeLine{46         \textcolor{comment}{// Fonctions pour la gestion des armees}}
+\DoxyCodeLine{47         \textcolor{keywordtype}{void} AfficherArmees();}
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} DisperserArmee();}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} Progression();}
+\DoxyCodeLine{50         \textcolor{comment}{// Fonctions pour la gestion de la carte}}
+\DoxyCodeLine{51         \textcolor{keywordtype}{void} AfficherCarte();}
+\DoxyCodeLine{52         \textcolor{keywordtype}{void} executerAtt(pair);}
+\DoxyCodeLine{53         \textcolor{comment}{// Fonction pour la gestion de la simulation}}
+\DoxyCodeLine{54         \textcolor{keywordtype}{void} episode();}
+\DoxyCodeLine{55         \textcolor{keywordtype}{void} afficherEpisode();}
+\DoxyCodeLine{56         \textcolor{keywordtype}{void} simuler(\textcolor{keywordtype}{int} , SDL\_Renderer*);}
+\DoxyCodeLine{57         \textcolor{keywordtype}{void} SDL\_display(SDL\_Renderer* );}
+\DoxyCodeLine{58         \textcolor{comment}{// Fonctions pour la gestion des morts}}
+\DoxyCodeLine{59         \textcolor{keywordtype}{int} getNombreMort(\textcolor{keywordtype}{int} numeroArmee = 2);}
+\DoxyCodeLine{60         \textcolor{keywordtype}{void} incrementerMort(\mbox{\hyperlink{classGuerrier}{Guerrier}} *);}
+\DoxyCodeLine{61         \textcolor{comment}{// Destructeur}}
+\DoxyCodeLine{62         \mbox{\hyperlink{classSimulation}{\string~Simulation}}();}
+\DoxyCodeLine{63 \};}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,89 @@
+\hypertarget{classElfe}{}\doxysection{Elfe Class Reference}
+\label{classElfe}\index{Elfe@{Elfe}}
+
+
+Inheritance diagram for Elfe\+:
+% FIG 0
+
+
+Collaboration diagram for Elfe\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classElfe_a37b74c6c430a7dda6997d6df0ce87e54}{restituer}} () override
+\item 
+pair \mbox{\hyperlink{classElfe_ae447c635369d1737084e0b9a68021147}{bouger}} (pair position) override
+\item 
+pair \mbox{\hyperlink{classElfe_a752cd02c500824c556f59944c8e515f8}{Position\+Att}} (pair position) override
+\item 
+void \mbox{\hyperlink{classElfe_a477b83bccdaee2b1185166b98510ffa2}{Afficher\+Guerrier}} () override
+\item 
+int \mbox{\hyperlink{classElfe_a5195196e8cb7aede570c0d442321d944}{get\+Type}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classElfe_ade591433f916ef822e8a24246427875d}\label{classElfe_ade591433f916ef822e8a24246427875d}} 
+static const int {\bfseries type} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classElfe_a477b83bccdaee2b1185166b98510ffa2}\label{classElfe_a477b83bccdaee2b1185166b98510ffa2}} 
+\index{Elfe@{Elfe}!AfficherGuerrier@{AfficherGuerrier}}
+\index{AfficherGuerrier@{AfficherGuerrier}!Elfe@{Elfe}}
+\doxysubsubsection{\texorpdfstring{AfficherGuerrier()}{AfficherGuerrier()}}
+{\footnotesize\ttfamily void Elfe\+::\+Afficher\+Guerrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classGuerrier}{Guerrier}}.
+
+\mbox{\Hypertarget{classElfe_ae447c635369d1737084e0b9a68021147}\label{classElfe_ae447c635369d1737084e0b9a68021147}} 
+\index{Elfe@{Elfe}!bouger@{bouger}}
+\index{bouger@{bouger}!Elfe@{Elfe}}
+\doxysubsubsection{\texorpdfstring{bouger()}{bouger()}}
+{\footnotesize\ttfamily pair Elfe\+::bouger (\begin{DoxyParamCaption}\item[{pair}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classGuerrier}{Guerrier}}.
+
+\mbox{\Hypertarget{classElfe_a5195196e8cb7aede570c0d442321d944}\label{classElfe_a5195196e8cb7aede570c0d442321d944}} 
+\index{Elfe@{Elfe}!getType@{getType}}
+\index{getType@{getType}!Elfe@{Elfe}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Elfe\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classGuerrier}{Guerrier}}.
+
+\mbox{\Hypertarget{classElfe_a752cd02c500824c556f59944c8e515f8}\label{classElfe_a752cd02c500824c556f59944c8e515f8}} 
+\index{Elfe@{Elfe}!PositionAtt@{PositionAtt}}
+\index{PositionAtt@{PositionAtt}!Elfe@{Elfe}}
+\doxysubsubsection{\texorpdfstring{PositionAtt()}{PositionAtt()}}
+{\footnotesize\ttfamily pair Elfe\+::\+Position\+Att (\begin{DoxyParamCaption}\item[{pair}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classGuerrier}{Guerrier}}.
+
+\mbox{\Hypertarget{classElfe_a37b74c6c430a7dda6997d6df0ce87e54}\label{classElfe_a37b74c6c430a7dda6997d6df0ce87e54}} 
+\index{Elfe@{Elfe}!restituer@{restituer}}
+\index{restituer@{restituer}!Elfe@{Elfe}}
+\doxysubsubsection{\texorpdfstring{restituer()}{restituer()}}
+{\footnotesize\ttfamily void Elfe\+::restituer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classGuerrier}{Guerrier}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Elfe.\+hpp\item 
+Elfe.\+cpp\end{DoxyCompactItemize}
