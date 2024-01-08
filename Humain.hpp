@@ -7,7 +7,6 @@
 #define Humain_HPP
 
 #include "Guerrier.hpp"
-
 /**
  * @class Humain
  * @brief Représente la classe du guerrier Humain, dérivée de la classe de base Guerrier.

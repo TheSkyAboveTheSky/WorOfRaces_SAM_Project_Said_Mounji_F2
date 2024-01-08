@@ -214,75 +214,21 @@ void Simulation::executerAtt(pair posGuerrierCour)
 {
     int taille = TAILLE_C * TAILLE_T;
     Guerrier *guerrierCour = carteEtat[posGuerrierCour.first][posGuerrierCour.second];
-    int type = guerrierCour->getType();
     pair nvPosition = guerrierCour->PositionAtt(posGuerrierCour);
     int i = (nvPosition.first + taille) % taille;
     int j = (nvPosition.second + taille) % taille;
     Guerrier *ennemi = carteEtat[i][j];
 
-    switch (type)
+    if (ennemi && !guerrierCour->estAmi(*ennemi))
     {
-    case 0:
-        if (ennemi && !guerrierCour->estAmi(*ennemi))
+        ennemi->reduireHp(guerrierCour->attaquer());
+
+        if (ennemi->estMort())
         {
-            ennemi->reduireHp(guerrierCour->attaquer());
-
-            if (ennemi->estMort())
-            {
-                carteGuerre[i][j] = nullptr;
-                incrementerMort(ennemi);
-                carte[i / TAILLE_T][j / TAILLE_T].nbMort++;
-            }
+            carteGuerre[i][j] = nullptr;
+            incrementerMort(ennemi);
+            carte[i / TAILLE_T][j / TAILLE_T].nbMort++;
         }
-
-        break;
-
-    case 1:
-        if (ennemi && !guerrierCour->estAmi(*ennemi))
-        {
-            ennemi->reduireHp(guerrierCour->attaquer());
-
-            if (ennemi->estMort())
-            {
-                carteGuerre[i][j] = nullptr;
-                incrementerMort(ennemi);
-                carte[i / TAILLE_T][j / TAILLE_T].nbMort++;
-            }
-        }
-
-        break;
-
-    case 2:
-        if (ennemi && !guerrierCour->estAmi(*ennemi))
-        {
-            ennemi->reduireHp(guerrierCour->attaquer());
-
-            if (ennemi->estMort())
-            {
-                carteGuerre[i][j] = nullptr;
-                incrementerMort(ennemi);
-                carte[i / TAILLE_T][j / TAILLE_T].nbMort++;
-            }
-        }
-
-        break;
-
-    case 3:
-        if (ennemi && !guerrierCour->estAmi(*ennemi))
-        {
-            ennemi->reduireHp(guerrierCour->attaquer());
-
-            if (ennemi->estMort())
-            {
-                carteGuerre[i][j] = nullptr;
-                incrementerMort(ennemi);
-                carte[i / TAILLE_T][j / TAILLE_T].nbMort++;
-            }
-        }
-
-        break;
-    default:
-        break;
     }
 }
 
@@ -291,8 +237,6 @@ void Simulation::executerAtt(pair posGuerrierCour)
  */
 void Simulation::episode()
 {
-    Guerrier *guerrierCour = nullptr;
-    pair destination;
     int taille = TAILLE_C * TAILLE_T;
     int dest_i, dest_j;
 
@@ -300,13 +244,13 @@ void Simulation::episode()
     {
         for (int j = 0; j < taille; j++)
         {
-            guerrierCour = carteEtat[i][j];
+            Guerrier *guerrierCour = carteEtat[i][j];
 
             if (guerrierCour)
             {
                 if (guerrierCour->decider())
                 {
-                    destination = guerrierCour->bouger(std::make_pair(i, j));
+                    pair destination = guerrierCour->bouger(std::make_pair(i, j));
                     dest_i = (destination.first + taille) % taille;
                     dest_j = (destination.second + taille) % taille;
 
@@ -349,10 +293,10 @@ void Simulation::afficherEpisode()
             else
             {
                 if (carteEtat[i][j]->getId() < 4)
-                    std::cout << "[" << BLE << carteEtat[i][j]->getType() << INIT << "]"
+                    std::cout << "[" << ARMEE1 << carteEtat[i][j]->getType() << NEUTRAL << "]"
                               << " ";
                 else
-                    std::cout << "[" << RED2 << carteEtat[i][j]->getType() << INIT << "]"
+                    std::cout << "[" << ARMEE2 << carteEtat[i][j]->getType() << NEUTRAL << "]"
                               << " ";
             }
         }
@@ -411,59 +355,59 @@ void Simulation::simuler(int tour, SDL_Renderer *render)
 void Simulation::SDL_display(SDL_Renderer* render)
 {
     SDL_Rect rectangle = { 0, 0, 20 * TAILLE_T, 20 * TAILLE_T };
-    for(int j = 0; j < TAILLE_C && rectangle.x + rectangle.w <= TAILLE_C * TAILLE_T * 20 ; j++)
+
+    for (int j = 0; j < TAILLE_C && rectangle.x + rectangle.w <= TAILLE_C * TAILLE_T * 20; j++)
     {
         for (int i = 0; i < TAILLE_C && rectangle.y <= TAILLE_C * TAILLE_T * 20; i++)
         {
-            SDL_SetRenderDrawColor(render, 112, 115, 104, 255);
+            SDL_SetRenderDrawColor(render, 255, 255, 255, 255);
             SDL_RenderDrawRect(render, &rectangle);
-			SDL_RenderFillRect(render, &rectangle);
+            SDL_RenderFillRect(render, &rectangle);
 
-			rectangle.y = rectangle.y + rectangle.h;
+            rectangle.y += rectangle.h;
         }
         rectangle.y = 0;
-		rectangle.x = rectangle.x + rectangle.w;
+        rectangle.x += rectangle.w;
     }
 
-	rectangle = { 0, 0, 20, 20 };
-	int i = 0, j = 0;
+    rectangle = { 0, 0, 20, 20 };
+    int i = 0, j = 0;
 
-	while (j < TAILLE_C * TAILLE_T && rectangle.x + rectangle.w <= TAILLE_C * TAILLE_T * 20)
-	{
-		while (i < TAILLE_C * TAILLE_T && rectangle.y <= TAILLE_C * TAILLE_T * 20)
-		{
-			if (carteEtat[i][j])
-			{
+    while (j < TAILLE_C * TAILLE_T && rectangle.x + rectangle.w <= TAILLE_C * TAILLE_T * 20)
+    {
+        while (i < TAILLE_C * TAILLE_T && rectangle.y <= TAILLE_C * TAILLE_T * 20)
+        {
+            if (carteEtat[i][j])
+            {
                 if (carteEtat[i][j]->getId() < 4)
                 {
-				    if (SDL_SetRenderDrawColor(render, 0, 0, 255, 255) != 0) std::cerr << "erreur";
+                    if (SDL_SetRenderDrawColor(render, 0, 255, 0, 255) != 0) std::cerr << "Erreur";
                 }
                 else
                 {
-				    if (SDL_SetRenderDrawColor(render, 255, 0, 0, 255) != 0) std::cerr << "erreur";
+                    if (SDL_SetRenderDrawColor(render, 255, 0, 0, 255) != 0) std::cerr << "Erreur";
                 }
 
-				if (SDL_RenderDrawRect(render, &rectangle) != 0) std::cerr << "erreur";
+                if (SDL_RenderDrawRect(render, &rectangle) != 0) std::cerr << "Erreur";
+                SDL_RenderFillRect(render, &rectangle);
+            }
 
-				SDL_RenderFillRect(render, &rectangle);
-			}
+            rectangle.y += rectangle.h;
+            i++;
+        }
 
-			rectangle.y = rectangle.y + rectangle.h;
-			i++;
-		}
+        rectangle.y = 0;
+        rectangle.x += rectangle.w;
+        j++;
+        i = 0;
+    }
 
-		rectangle.y = 0;
-		rectangle.x = rectangle.x + rectangle.w;
-		j++;
-		i = 0;
-	}
+    SDL_RenderPresent(render);
+    SDL_Delay(1000);
 
-	SDL_RenderPresent(render);
-	SDL_Delay(1000);
+    if (SDL_SetRenderDrawColor(render, 0, 0, 0, 255) != 0) std::cerr << "Erreur";
 
-	if (SDL_SetRenderDrawColor(render, 0, 0, 0, 255) != 0) std::cerr << "erreur";
-
-	SDL_RenderClear(render);
+    SDL_RenderClear(render);
 }
 
 /**

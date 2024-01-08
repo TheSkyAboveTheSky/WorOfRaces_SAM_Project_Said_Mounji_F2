@@ -26,10 +26,9 @@ const int N_ELFE = 42;
 const int N_ORQUE = 30;
 const int N_TITAN = 10;
 
-#define BLE     "\x1b[44m"
-#define INIT    "\x1b[0m"
-#define RED     "\x1b[31m"
-#define RED2    "\x1b[41;5;1m"
+#define ARMEE1     "\x1b[92m"
+#define NEUTRAL    "\x1b[0m"
+#define ARMEE2    "\x1b[91m"
 
 typedef std::vector<Guerrier *> Armee;
 

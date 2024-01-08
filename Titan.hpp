@@ -7,7 +7,6 @@
 #define Titan_HPP
 
 #include "Guerrier.hpp"
-
 /**
  * @class Titan
  * @brief Représente la classe du guerrier Titan, dérivée de la classe de base Guerrier.
