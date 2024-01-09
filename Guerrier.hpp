@@ -24,6 +24,7 @@ protected:
     int intelligence;     /**< Niveau d'intelligence du guerrier. */
     int force;            /**< Force du guerrier. */
     int vitesse;          /**< Vitesse du guerrier. */
+    int mana;             /**< mana du guerrier. */
     int id;               /**< Identifiant unique du guerrier. */
     float precision;      /**< Précision des attaques du guerrier. */
 
@@ -43,6 +44,7 @@ public:
     int getForce();        /**< Obtient la force du guerrier. */
     int getVitesse();      /**< Obtient la vitesse du guerrier. */
     int getId();           /**< Obtient l'identifiant unique du guerrier. */
+    int getMana();         /**< Obtient le mana du guerrier. */
     float getPrecision();  /**< Obtient la précision des attaques du guerrier. */
 
     // Setters
@@ -52,6 +54,7 @@ public:
     void setForce(int newForce);     /**< Définit la force du guerrier. */
     void setVitesse(int newVitesse); /**< Définit la vitesse du guerrier. */
     void setId(int newId);           /**< Définit l'identifiant unique du guerrier. */
+    void setMana(int newMana);       /**< Définit le mana du guerrier. */
     void setPrecision(float newPrecision);   /**< Définit la précision des attaques du guerrier. */
 
     // Fonctions

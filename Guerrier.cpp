@@ -44,6 +44,12 @@ int Guerrier::getVitesse() { return vitesse; }
 int Guerrier::getId() { return id; }
 
 /**
+ * @brief Obtient le mana du Guerrier.
+ * @return Le mana.
+ */
+int Guerrier::getMana() { return mana; }
+
+/**
  * @brief Obtient la précision du Guerrier.
  * @return La précision.
  */
@@ -80,6 +86,12 @@ void Guerrier::setVitesse(int newVitesse) { vitesse = newVitesse; }
  * @param newId La nouvelle valeur de l'ID.
  */
 void Guerrier::setId(int newId) { id = newId; }
+
+/**
+ * @brief Définit le Mana du Guerrier.
+ * @param newId La nouvelle valeur du mana.
+ */
+void Guerrier::setMana(int newMana) { mana = newMana; }
 
 /**
  * @brief Définit la précision du Guerrier.
