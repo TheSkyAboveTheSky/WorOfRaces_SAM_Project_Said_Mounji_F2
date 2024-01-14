@@ -80,3 +80,42 @@ sudo apt-get install doxygen
 - **Décorateur :** Classe abstraite étendant le composant et contenant une instance du composant concret. Elle peut ajouter des fonctionnalités supplémentaires.
 - **Décorateurs concrets :** Classes étendant les décorateurs abstraits et ajoutant des fonctionnalités spécifiques.
 !["Stratégie"](Diagrams/Réel/Classe/RoleDecorator%20Class.png)
+
+## Liste des tâches réalisées "Commits" au cours du projet : 
+
+| Number | Commit ID | Date                 | Comment                                            |
+|--------|-----------|----------------------|----------------------------------------------------|
+| 1      | cc39a04   | 2023-12-01 19:34:21 | first commit                                       |
+| 2      | ef5158d   | 2023-12-01 19:35:47 | add a blank makefile                               |
+| 3      | 2b60d55   | 2023-12-01 21:48:32 | Testing Basic Makefile                             |
+| 4      | 5f780c4   | 2023-12-11 18:21:07 | Classe de Base Guerrier                            |
+| 5      | 2d50cb8   | 2023-12-11 19:54:18 | Classe num 1 : Humain                              |
+| 6      | d998826   | 2023-12-18 20:21:34 | CLasses Elfe Orque Titan                           |
+| 7      | 0534af6   | 2023-12-18 20:30:17 | Add Mersenne Twister                               |
+| 8      | 03bf226   | 2023-12-21 17:41:31 | Add Fonctions but without Implementation          |
+| 9      | 942d9f1   | 2023-12-30 23:22:01 | Implementation & Fix Bugs after 9 Days of Debugging |
+| 10     | bfc0a48   | 2024-01-01 18:13:21 | Update Guerrier .cpp .hpp Working fine             |
+| 11     | fe42969   | 2024-01-01 19:32:21 | Update Humain .cpp .hpp Working fine               |
+| 12     | 08233b5   | 2024-01-01 20:02:42 | Update Elfe .cpp .hpp Working fine                 |
+| 13     | 722d349   | 2024-01-01 21:22:13 | Update Orque .cpp .hpp Working fine                |
+| 14     | 9701341   | 2024-01-01 21:52:48 | Update Titan .cpp .hpp Working fine                |
+| 15     | e96bacf   | 2024-01-01 22:13:28 | Fix some Bugs                                      |
+| 16     | 9d6f499   | 2024-01-01 22:43:13 | Fix some bugs in the makefile                      |
+| 17     | 2677fbd   | 2024-01-02 02:12:31 | Add Files : Simulation Statistique                 |
+| 18     | 6c0ed04   | 2024-01-02 04:31:21 | Update Makefile Want To Use SDL2 SDL2 Image        |
+| 19     | ac3de67   | 2024-01-05 20:01:11 | Add Terrain cpp hpp Working with SDL2 Everything is working fine |
+| 20     | 72ed59d   | 2024-01-05 21:12:56 | Ad Gitignore file to ignore .O files               |
+| 21     | d9e15e5   | 2024-01-05 21:24:05 | Add Valgrind and edit makefile to work with it      |
+| 22     | 5def4ec   | 2024-01-06 01:11:24 | Add Doxygen and it's working                       |
+| 23     | 9e79c07   | 2024-01-06 01:53:36 | Add Doxygenn doc for all the files                 |
+| 24     | bd6777b   | 2024-01-06 01:55:21 | Add docygen command to the makefile                |
+| 25     | 0236854   | 2024-01-06 03:21:34 | Add Doxygen doc for all functions variables and all but with the help of chatgpt |
+| 26     | a16b500   | 2024-01-07 19:54:03 | optimiser le code                                   |
+| 27     | b45ce56   | 2024-01-07 19:57:44 | update the .gitignore                              |
+| 28     | 5b29b6f   | 2024-01-08 20:11:58 | add mana to Guerrier                                |
+| 29     | 39841a3   | 2024-01-10 21:01:14 | Add Roles Using Decorator & Strategy Design Patterns |
+| 30     | 05cb411   | 2024-01-12 23:41:25 | Add Doxygen Docs for the Roles Files with the help of chatgpt |
+| 31     | 6c4a209   | 2024-01-13 20:12:53 | Add CDC                                            |
+| 32     | 890ff7a   | 2024-01-13 20:41:28 | Modify CDC et ajouter les diagrames de gantt et pert previsionnel |
+| 33     | 975ddf5   | 2024-01-13 21:13:43 | Add diagrammes de classe generee par doxygen        |
+| 34     | a80a837   | 2024-01-14 13:42:36 | Update Readme.md and add a pdf version of it       |
